@@ -1,9 +1,7 @@
 package org.kgotla.society.repository;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.kgotla.society.model.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-
-@Repository
-public interface MemberRepository extends CrudRepository {
+public interface MemberRepository extends JpaRepository<Member, Long> {
 }

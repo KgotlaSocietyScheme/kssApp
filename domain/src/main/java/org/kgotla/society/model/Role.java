@@ -2,19 +2,20 @@ package org.kgotla.society.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Table(name = "Role")
 @Entity
 @Data
-@Table(name = "Role")
 public class Role {
-
     @Id
-    @GeneratedValue
-    @Column(name = "roleID")
-    private long roleID;
-    @Column(name = "roleName")
+    @Column(name = "RoleID")
+    private Long roleID;
+    @Column(name = "RoleName")
     private String roleName;
-    @Column(name ="roleType")
+    @Column(name = "RoleType")
     private String roleType;
 }

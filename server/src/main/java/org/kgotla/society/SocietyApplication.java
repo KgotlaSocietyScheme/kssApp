@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SocietyApplication {
 
 	public static void main(String[] args) {
+		System.out.println("************************************* 404 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		SpringApplication.run(SocietyApplication.class, args);
 	}
 

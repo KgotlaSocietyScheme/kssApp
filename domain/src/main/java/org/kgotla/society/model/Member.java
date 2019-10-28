@@ -3,15 +3,17 @@ package org.kgotla.society.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Data
 @Table(name = "Members")
-public class Member {
-
+public class Member extends AuditModel{
     @Id
-    @GeneratedValue
+//    @GeneratedValue
     @Column(name = "memberID")
     private long id;
     @Column(name = "firstName")
@@ -28,6 +30,4 @@ public class Member {
     private String phoneNumber;
     @Column(name = "password")
     private String password;
-
-
 }
